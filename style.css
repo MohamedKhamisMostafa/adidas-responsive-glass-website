@@ -17,7 +17,7 @@ body::after{
     height: 100%;
     background-color: red;
     position: absolute;
-    clip-path: circle(40% at right 70%);
+    clip-path: circle(40% at right 75%);
     z-index: -1;
     
 }
@@ -26,6 +26,7 @@ body::after{
     height: 80%;
     background-color:rgba(255, 255, 255,0.1);
     border-radius: 20px;
+    overflow: hidden;
 
 }
 nav{
@@ -57,3 +58,36 @@ nav ul li a{
 nav ul li a:hover{
     color: red;
 }
+.content{
+    display: flex;
+     justify-content: space-between;
+     align-items: center;
+     height: 100%;
+     width: 80%;
+     margin: auto;
+}
+.content .text{
+    color: white;
+    width: 40%;
+
+}
+.content .text h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.content .text p{
+    font-size: 18px;
+    line-height: 25px;
+    margin: 10px 0;
+    letter-spacing: 1px;
+
+}
+.content .image{
+    width: 40%;
+    
+}
+.content .image img{
+    width: 400px;
+} 
