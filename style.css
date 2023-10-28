@@ -91,3 +91,21 @@ nav ul li a:hover{
 .content .image img{
     width: 400px;
 } 
+@media (min-width:950px) and (max-width:1150px){ 
+    .content .image img{
+        width: 320px;
+    } 
+}
+@media (max-width:950px){
+    .content , nav{
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .content .image , .content .text{
+        width: 80%;
+    }
+    body::after{
+        clip-path: circle(50% at bottom);
+    }
+}
